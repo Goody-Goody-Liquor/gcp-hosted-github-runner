@@ -75,6 +75,7 @@ echo "Setup finished"
 EOT
 }*/
 
+
 // First parameter has to be the base64 encoded jit_config
 resource "google_compute_project_metadata_item" "startup_scripts_register_jit_runner" {
   key   = "startup_script_register_jit_runner"
