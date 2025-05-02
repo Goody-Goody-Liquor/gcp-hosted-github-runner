@@ -115,3 +115,15 @@ variable "force_cloud_run_deployment" {
   description = "Use only for development. Each Terraform apply leads to a new revision of the cloud run."
   default     = false
 }
+
+variable "network" {
+  type = string
+  description = "The name of the network to join the VM to"
+  default = "spot-runner-network"
+}
+
+variable "subnetwork" {
+  type = string
+  description = "The name of the subnetwork to join the VM to"
+  default = "spot-runner-subnetwork"
+}
